@@ -1,0 +1,14 @@
+{
+  "name": "@webstorm-bug/pkg-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@webstorm-bug/pkg-a": "*"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  }
+}

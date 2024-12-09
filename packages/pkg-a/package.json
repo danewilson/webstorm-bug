@@ -1,0 +1,24 @@
+{
+  "name": "@webstorm-bug/pkg-a",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "exports": {
+    ".": {
+      "@webstorm-bug/source": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "@webstorm-bug/source": "./src/*/index.ts",
+      "default": "./dist/*/index.js"
+    },
+    "./*.js": {
+      "@webstorm-bug/source": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
